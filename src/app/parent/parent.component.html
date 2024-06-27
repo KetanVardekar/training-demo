@@ -1,0 +1,16 @@
+
+
+<div  class="parent-container">
+    <h2>Parent Component</h2>
+    <input type="text" class="form-control w-50" [(ngModel)]="parentMessage" placeholder="Enter message" />
+    <button (click)="sendMessage()" class="btn btn-success mt-3">Send to Child</button>
+    <div class="mt-5">
+        Message From Child :-  {{receivedMessage}}
+    </div>
+    
+    <app-child [message]="childMessage" (messageEvent)="receiveMessage($event)"></app-child>
+  </div>
+
+
+
+

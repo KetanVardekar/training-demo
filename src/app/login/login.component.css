@@ -1,0 +1,16 @@
+.red-bg {
+    background-color: red;
+    color: white;
+  }
+  .blue-bg {
+    background-color: blue;
+    color: white;
+  }
+
+  .disabled-button {
+    opacity: 0.6; 
+    cursor: not-allowed;
+   
+    background-color: #cccccc;
+    color: #666666;
+  }
