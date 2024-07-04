@@ -7,7 +7,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
   //   return next(req); 
   // }
   
-  const authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB0dC5jb20iLCJvcmdhbml6YXRpb25JZCI6Ik9SRzAxIn0sImlhdCI6MTcxOTQ2ODkzNSwiZXhwIjoxNzE5NTU1MzM1fQ.rrneke2Ea55Fz-fQoWNkxEa37mRGjcq-dKkqF6gTEp8';
+  const authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJvcmdhbml6YXRpb25JZCI6Ik9SRzAyIn0sImlhdCI6MTcyMDA3NjEwOCwiZXhwIjoxNzIwMTYyNTA4fQ.b-77UqGz6PvndyUsMGy1im0oetp6Cj_c7ilTN8mDaj4';
 
   
   const authReq = req.clone({

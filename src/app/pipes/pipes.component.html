@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="column">
+      <h6>DatePipe</h6>
+      <p>Today is {{ today | date:'fullDate' }}</p>
+      <p>Short date: {{ today | date:'shortDate' }}</p>
+      <p>Custom format: {{ today | date:'yyyy-MM-dd' }}</p>
+      <p>Chaining Pipe:  {{ today | date:'fullDate' | uppercase }}</p>
+    </div>
+    <div class="column">
+      <h6>CurrencyPipe</h6>
+      <p>Price: {{ price | currency:'USD' }}</p>
+      <p>Price in Euros: {{ price | currency:'EUR' }}</p>
+      
+    </div>
+    <div class="column">
+      <h6>UpperCasePipe and LowerCasePipe</h6>
+      <p>Uppercase: {{ message | uppercase }}</p>
+      <p>Lowercase: {{ message | lowercase }}</p>
+    </div>
+
+
+<!-- 
+    {minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}
+    minIntegerDigits: The minimum number of digits to display before the decimal point.
+minFractionDigits: The minimum number of digits to display after the decimal point.
+maxFractionDigits: The maximum number of digits to display after the decimal point. -->
+
+    <div class="column">
+      <h6>DecimalPipe</h6>
+      <p>Number: {{ number | number:'1.1-2' }}</p>
+      <p>Three decimals: {{ number | number:'1.3-3' }}</p>
+    </div>
+    <div class="column">
+      <h6>PercentPipe</h6>
+      <p>Percentage: {{ fraction | percent }}</p>
+      <p>Custom format: {{ fraction | percent:'1.0-2' }}</p>
+    </div>
+    <div class="column">
+        <h6>Custom Pipe</h6>
+        <p>Exponent: {{ 2 | exponentPipe:3 }}</p>
+        
+      </div>
+    <div class="column">
+      <h6>JsonPipe</h6>
+      <p>Object as JSON: {{ data | json }}</p>
+    </div>
+  </div>
+  

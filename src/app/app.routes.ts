@@ -10,6 +10,7 @@ import { TeamComponent } from './about/team/team.component';
 import { CompanyComponent } from './about/company/company.component';
 
 import { SiteComponent } from './site/site.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 export const routes: Routes = [
 
@@ -28,4 +29,7 @@ export const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'sites', component: SiteComponent },
     { path: 'users/:id', component: UsersComponent },
+    {
+        path:'pipes',component:PipesComponent
+    }
 ];
