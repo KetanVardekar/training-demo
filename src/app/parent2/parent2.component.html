@@ -1,0 +1,17 @@
+<button class="btn btn-primary" (click)="submit()"> Submit Parent</button>
+
+{{child}}
+<app-child2 [parentData] = "parentData" staticData1="'Ketan'" (message)="messageEvent($event)">
+
+
+    <input class="form-control" type="text"  placeholder="enetr ur" #text/>
+</app-child2>
+
+
+
+
+
+  
+
+
+

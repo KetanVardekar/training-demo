@@ -1,8 +1,18 @@
 
 
 
-<ul *ngFor="let site of siteData">
-    <li >{{ site?.siteName }}</li>
-    <li >{{ site?.city }}</li>
-  </ul>
+<!-- <ul *ngFor="let site of data$|  async as data">
+    <li >{{ data?.siteName }}</li>
+    <li >{{ data?.city }}</li>
+  </ul> -->
+
+  <ul *ngIf="data$ | async as data">
+ {{data |  json}}heelo
+</ul>
+<!-- hehhehh
+  {{data$ |  json}}
+
+  {{siteData |  json}} -->
+
+  <button (click)="goToContact()" class="btn btn-primary">Go to Contact</button>
   

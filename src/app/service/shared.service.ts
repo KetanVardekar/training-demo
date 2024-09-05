@@ -14,4 +14,7 @@ export class SharedService {
   changeData(data: any) {
     this.dataSource.next(data); //From the data you will send
   }
+  isLoggedIn(): boolean {
+    return false;
+  }
 }

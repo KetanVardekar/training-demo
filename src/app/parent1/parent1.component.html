@@ -1,0 +1,9 @@
+<button class="btn btn-primary mt-5" (click)="submit()">SUBMIT</button>
+
+
+{{childData}}
+
+<app-child1 [data]="data" staticData="test"  (dataToSend)="event1($event)" >
+
+    <input type="text" class="form-control" #text/>
+</app-child1>

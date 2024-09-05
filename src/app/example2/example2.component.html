@@ -1,0 +1,39 @@
+
+
+<input  class="form-control" type="text"  #eleref/>
+
+<span #div1>
+    HELLO
+</span><br>
+
+
+<button class="btn btn-primary" (click)="submit()">Submit</button>
+<button class="btn btn-primary" (click)="clear()">CLEAR</button>
+
+
+<ng-container #container></ng-container>
+
+
+
+<ng-template #brand>
+
+    <div class="logo">
+        <img src="https://picsum.photos/200" alt="Logo">
+        <h3>Our Brand</h3>
+        <p>At Our Brand, we believe in quality and innovation. Our mission is to deliver exceptional products that
+            enrich the lives of our customers.</p>
+        <p>We are committed to sustainability and ensure that every step of our production process is environmentally
+            friendly. From design to delivery, we strive to reduce our impact on the planet.</p>
+        <p>Join us on our journey as we continue to push boundaries and create solutions that make a difference.</p>
+    </div>
+</ng-template>
+
+<!-- <ng-container *ngTemplateOutlet="brand"></ng-container>
+<ng-container *ngTemplateOutlet="brand"></ng-container> -->
+
+
+
+
+<div #hostChild>
+    Hello Ketan Here
+</div>

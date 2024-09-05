@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { TeamComponent } from './team/team.component';
+import { CompanyComponent } from './company/company.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule,TeamComponent,CompanyComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
