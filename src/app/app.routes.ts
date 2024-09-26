@@ -45,5 +45,21 @@ export const routes: Routes = [
     { path: 'example2', component: Example2Component },
     { path: 'example3', component: Example3Component },
     { path: 'users/:id', component: UsersComponent },
+    {
+        path:'admin',
+        loadChildren:()=>import('./admin/admin.module').then(m =>m.AdminModule)
+    },
+    {
+        path:'add-user',
+        loadComponent:()=>import('./admin/add-user/add-user.component').then(c => c.AddUserComponent)
+    },
+    {
+        path:'dashboard',
+        loadChildren:()=>import('./dashboard-1/dashboard-1.module').then(m => m.Dashboard1Module)
+    },
+    {
+        path:'overview',
+        loadChildren:()=>import('./overview/overview.module').then(m =>m.OverviewModule)
+    },
     
 ];
